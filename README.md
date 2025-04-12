@@ -6,12 +6,6 @@ Simulador educacional e visual de mercado financeiro, com cotações fictícias 
 
 ## 🚀 Tecnologias Utilizadas
 
-### 🔧 Backend
-- Java 17+
-- Spring Boot
-- Banco de dados: PostgreSQL (ou H2)
-- Simulação de cotações (tick a cada 1s)
-
 ### 🎨 Frontend
 - Next.js (React)
 - Tailwind CSS
