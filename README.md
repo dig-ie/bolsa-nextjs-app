@@ -1,0 +1,1 @@
+# nextjs-simulador-de-bolsa-de-valores
