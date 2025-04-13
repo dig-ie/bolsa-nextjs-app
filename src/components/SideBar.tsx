@@ -1,58 +1,47 @@
-// components/Sidebar.tsx
-'use client';
+'use client'
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
 
 export default function Sidebar() {
-  const [isOpen, setIsOpen] = useState(false);
+  // Estado para controlar a visibilidade da sidebar
+  const [isOpen, setIsOpen] = useState(true);
 
-  const links = [
-    { href: '/', label: 'Início' },
-    { href: '/investimentos', label: 'Investimentos' },
-    { href: '/ranking', label: 'Ranking' },
-    { href: '/perfil', label: 'Perfil' },
-  ];
+//   // Função para alternar a visibilidade da sidebar
+//   const toggleSidebar = () => setIsOpen(!isOpen);
 
   return (
-    <>
-      {/* Botão hamburguer visível apenas no mobile */}
-      <button
-        className="md:hidden p-4"
-        onClick={() => setIsOpen(!isOpen)}
-        aria-label="Abrir menu"
-      >
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
-      </button>
+    <div
+      className={`inset-0 z-50 bg-gray-800 transition-all duration-300 ease-in-out ${
+        isOpen ? 'w-64' : 'w-0'
+      }`}
+    >
 
-      {/* Sidebar */}
-      <aside
-        className={`fixed top-0 left-0 h-full bg-gray-900 text-white w-64 transform transition-transform z-40
-        ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 md:static md:block`}
-      >
-        <nav className="p-4 space-y-4">
-          <h2 className="text-xl font-semibold mb-4">Simulador</h2>
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="block hover:bg-gray-700 px-3 py-2 rounded-md transition"
-              onClick={() => setIsOpen(false)}
-            >
-              {link.label}
+      {/* Conteúdo da Sidebar */}
+      <nav className={`text-white p-4 transition-all duration-300 ease-in-out`}>
+        <ul className="space-y-4">
+          <li>
+            <Link href="/" className="hover:text-gray-400">
+              Home
             </Link>
-          ))}
-        </nav>
-      </aside>
-
-      {/* Overlay para fechar o menu no mobile */}
-      {isOpen && (
-        <div
-          className="fixed inset-0 bg-black opacity-50 z-30 md:hidden"
-          onClick={() => setIsOpen(false)}
-        />
-      )}
-    </>
+          </li>
+          <li>
+            <Link href="/about" className="hover:text-gray-400">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link href="/services" className="hover:text-gray-400">
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" className="hover:text-gray-400">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 }
