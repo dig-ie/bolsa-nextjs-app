@@ -16,8 +16,7 @@ export default function Sidebar() {
 
     <>
 
-      {/* Botão toggle */}
-      {/* funçao de fechar e abrir a sidebar */}
+
 
 
 
@@ -58,7 +57,11 @@ export default function Sidebar() {
           </ul>
         </nav>
       </div>
+
+      {/* Botão toggle */}
       <button onClick={() => setIsOpen(!isOpen)} className='relative '>
+        {/* funçao de fechar e abrir a sidebar */}
+
         {isOpen ? <X /> : <Menu />}
       </button>
     </>
