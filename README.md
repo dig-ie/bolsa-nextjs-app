@@ -28,7 +28,7 @@ Simulador educacional e visual de mercado financeiro, com cotações fictícias 
 
 
 - **Diêgo de Barros Ferreira** — Full Stack Tech Lead
-- - **Arthur** — Designer UX/UI
+- **Arthur** — Designer UX/UI
 - **Arthur** — Frontend Next.js
 - **Pablo** — Frontend Next.js
 - **Brenno** — Backend Java/Spring
