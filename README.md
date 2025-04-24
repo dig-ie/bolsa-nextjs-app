@@ -1,4 +1,4 @@
-# 📈 Simulador de Bolsa de Valores
+    # 📈 Simulador de Bolsa de Valores
 
 Simulador educacional e visual de mercado financeiro, com cotações fictícias variando em tempo real. Ideal para praticar conceitos como compra, venda e análise de gráficos de ativos.
 
@@ -26,11 +26,12 @@ Simulador educacional e visual de mercado financeiro, com cotações fictícias 
 
 ## 👨‍👩‍👧‍👦 Time
 
+
 - **Diêgo de Barros Ferreira** — Full Stack Tech Lead
-- **Jaciporan** — Full Stack iniciante
-- **Arthur** — Frontend Next.js iniciante
-- **Pablo** — Frontend Next.js iniciante
-- **Brenno** — Backend Java/Spring iniciante
+- - **Arthur** — Designer UX/UI
+- **Arthur** — Frontend Next.js
+- **Pablo** — Frontend Next.js
+- **Brenno** — Backend Java/Spring
 
 ---
 
