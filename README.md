@@ -28,7 +28,7 @@ Simulador educacional e visual de mercado financeiro, com cotações fictícias 
 
 
 - **Diêgo de Barros Ferreira** — Full Stack Tech Lead
-- **Giulia** — Designer UX/UI
+- **Maria Giulia Martins** — Designer UX/UI
 - **Arthur ViníciusA** — Frontend Next.js
 - **Pablo Santos** — Frontend Next.js
 - **Brenno Felipe** — Backend Java/Spring
