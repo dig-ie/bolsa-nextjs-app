@@ -6,21 +6,16 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primaryGreen: #2ecc71;        /* Verde */
+  --color-secondaryColor: #2c3e50;      /* Grafite */
+  --color-alertColor: #f1c40f;          /* Âmbar */
+  --color-alertError: #e74c3c;          /* Vermelho */
+  --color-alertSucess: #27ae60;         /* Verde escuro */
+  --color-fundoEscuro: #1e272e;         /* Azul Marinho Escuro */
+  --color-backgroundClaro: #f5f6fa;     /* Cinza Claro */
+  --color-textClaro: #333333;           /* Cinza Escuro */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+
+
