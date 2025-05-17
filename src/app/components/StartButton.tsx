@@ -1,9 +1,6 @@
 "use client";
 import React from "react";
-
-type StartButtonProps = {
-  title: string;
-};
+import { StartButtonProps } from "./StartButton.d";
 
 const StartButton: React.FC<StartButtonProps> = ({ title }) => {
   return (
