@@ -14,7 +14,7 @@ export default function Home() {
       <div className="bg-white rounded-t-4xl py-25 flex flex-col gap-5">
       <Form label="Email:" placeholder="usuário123@gmail.com" />
       <Form label="Senha:" placeholder="Senha do Usuario" />
-      <Link a="Esqueceu a senha?" />
+      <Link text="Esqueceu a senha?" />
       <div className=" flex items-center justify-center gap-4 mt-4">
       <Button title="Facebook" href="https://pt-br.facebook.com/login/" />
       <Button title="Google" href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dsign_in_no_continue%26pli%3D1&ec=GAlAwAE&hl=pt_BR&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-687016799%3A1747074790770482" />
