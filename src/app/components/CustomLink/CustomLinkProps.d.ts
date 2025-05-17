@@ -1,3 +1,3 @@
 export type CustomLinkProps = {
-    a: string;
+    text: string;
 };
