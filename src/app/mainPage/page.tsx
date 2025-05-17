@@ -1,39 +1,47 @@
-import React from 'react';
-import Header from '../components/Header';
+"use client";
 
-type MainPageProps = {
-    title?: string;
-    description?: string;
-    buttonTitle?: string;
-};
+import React from "react";
+import Header from "../components/Header";
+import StartButton from "../components/StartButton";
+import { ActionValueVariation } from "../components/ActionValueVariation";
+import ActionsGraph from "../components/ActionsGraph";
 
-const MainPage: React.FC<MainPageProps> = ({
-    title = "Invista sem medo. Aprenda simulando de verdade.",
-    description = "Simule operações na bolsa com dados reais e sem riscos.",
-    buttonTitle = "Comece agora gratuitamente",
-}) => {
-    return (
-        //declarar o header
-        <main>
-            <Header />
+export default function MainPage() {
 
-            <div className="flex flex-col items-center gap-10 p-10">
-                <div>
-                    <h1 className="text-4xl font-bold">{title}</h1>
-                </div>
 
-                <div>
-                    <h2 className="text-xl font-bold">{description}</h2>
-                </div>
+  //Valores mockados para teste
+  const stockLast7DaysValues = [
+    { dayOfWeek: 'Monday', soldValue: 10.2, forecastValue: 80 },
+    { dayOfWeek: 'Tuesday', soldValue: 20.4, forecastValue: 90 },
+    { dayOfWeek: 'Wednesday', soldValue: 30.5, forecastValue: 40 },
+    { dayOfWeek: 'Thursday', soldValue: 40.1, forecastValue: 10 },
+    { dayOfWeek: 'Friday', soldValue: 80, forecastValue: 40 },
+  ];
 
-                <button className="border border-black text-xl font-bold rounded-xl w-[320px] h-[58px]">
-                    {buttonTitle}
-                </button>
-            </div>
-        </main>
-    );
-};
+  return (
+    <main>
+      <Header title="Valorim" buttonText="Entrar" />
+      <div className="flex flex-col items-center gap-10 p-10">
+        <div>
+          <h1 className="text-4xl font-bold">
+            Invista sem medo. Aprenda simulando de verdade
+          </h1>
+        </div>
 
-export default MainPage;
+        <div>
+          <h2 className="text-xl font-bold">
+            Simule operações na bolsa com dados reais e sem riscos
+          </h2>
+        </div>
 
-//Todo converte todos os componentes para componentes funcionais
+        <StartButton title="Comece agora gratuitamente" />
+      </div>
+      <ActionValueVariation actionName="X Y Z" />
+      {/* passando os dados do array pelo data, e passando para a view do grafico */}
+      <ActionsGraph data={stockLast7DaysValues} />
+      <ActionValueVariation balanceLabelText="Carteira Digital:" priceWallet={[2000]} />
+      {/* <HowWorks /> */}
+
+    </main>
+  );
+}
