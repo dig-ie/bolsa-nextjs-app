@@ -3,11 +3,12 @@ import Form from "../components/Form/Form";
 import Text from "../components/Text/Text";
 import Link from "../components/CustomLink/CustomLink";
 import Submit from "../components/Submit/Submit";
-
+import BackButton from "../components/BackButton/BackButton";
 
 export default function Home() {
   return (
     <div className="bg-primaryGreen ">
+      <BackButton href="./mainPage"/>
       <div className="flex flex-col items-center justify-center   relative  h-40">
       <Text h1="Faça seu Login." h2="" p="" />
       </div>

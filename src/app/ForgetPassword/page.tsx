@@ -1,10 +1,12 @@
 import Text from "../components/Text/Text";
 import Form from "../components/Form/Form";
 import Submit from "../components/Submit/Submit";
+import BackButton from "../components/BackButton/BackButton";
 
 export default function ForgetPassword() {
   return (
     <div className="bg-primaryGreen">
+      <BackButton href="./LoginPage"/>
         <div className="flex flex-col items-center justify-center   relative  h-40">
           <Text h1="Recuperar Senha" h2="" p="" />
         </div>
