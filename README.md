@@ -1,4 +1,4 @@
-# 📈 Simulador de Bolsa de Valores
+# 📈✅ Simulador de Bolsa de Valores - Valorim
 
 Simulador educacional e visual de mercado financeiro, com cotações fictícias variando em tempo real. Ideal para praticar conceitos como compra, venda e análise de gráficos de ativos.
 
