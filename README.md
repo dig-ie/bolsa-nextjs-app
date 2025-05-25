@@ -32,6 +32,7 @@ Simulador educacional e visual de mercado financeiro, com cotações fictícias 
 - **Arthur ViníciusA** — Frontend Next.js
 - **Pablo Santos** — Frontend Next.js
 - **Brenno Felipe** — Backend Java/Spring
+- **Camilo Ariel** — Backend Java/Spring
 
 ---
 
